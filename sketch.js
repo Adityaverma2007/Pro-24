@@ -4,6 +4,8 @@ const Bodies = Matter.Bodies;
 
 var engine, world;
 var hammer;
+var rubber;
+var metal;
 
 
 function setup(){
@@ -14,8 +16,8 @@ function setup(){
     plane = new Plane(600,height,1200,20)
     hammer = new Hammer(10,100);
 
-  
-
+  rubber = new Rubber(200,200,20,20);
+  metal = new metal(500,400,20,20)
 
 }
 
@@ -26,7 +28,7 @@ function draw(){
 
     plane.display();
     hammer.display();
-
-    
+    rubber.display(); 
+    metal.display();
  
 }
